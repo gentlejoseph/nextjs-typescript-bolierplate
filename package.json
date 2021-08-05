@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "pre-commit": "next lint"
+    "pre-commit": "next lint --fix && git add -A ."
   },
   "dependencies": {
     "next": "11.0.1",
@@ -19,6 +19,7 @@
     "@types/react": "17.0.15",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "eslint": "7.32.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.1",
